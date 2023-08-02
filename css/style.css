@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(45, 46, 45);
+}
+main{
+    width: 120px;   
+    height: 250px;
+    background-color: rgb(255, 213, 0);
+    position: relative;;
+    margin-left: 50%;
+    margin-top: 5%;
+    border-radius: 15%;
+
+
+}
+
+main div{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: relative;
+    margin-bottom: 2%;
+    margin-left: 18%;
+    
+}
+
+div:nth-child(1){
+    background-color: red;
+    animation-name: rojo;
+    animation-duration: 5s;
+    animation-delay: 1s ;
+    animation-iteration-count: 1;
+    animation-direction: initial;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+@keyframes rojo {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: black;
+   }
+}
+div:nth-child(2){
+    background-color: black;
+    animation-name: amarillo;
+    animation-duration: 8s;
+    animation-delay: 5s ;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes amarillo {
+    0%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: black;
+   }
+}
+div:nth-child(3){
+    background-color: black;
+    animation-name: verde;
+    animation-duration: 8s;
+    animation-delay:10s ;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes verde {
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: green;
+   }
+}
+
+img{
+    width: 300px;
+    height: 170px;
+    opacity: 0;
+    animation-name: coche; 
+    animation-duration: 8s;
+    animation-delay:10s ;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+@keyframes coche {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        
+        transform: translate(480%);
+        opacity: 0;
+    }
+  }
+
+  footer{
+    border: 10px dashed #ffffff;   
+
+
+  }
